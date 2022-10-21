@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Parse {
-    String json;
+    private String json;
 
     public Parse(String json) {
         this.json = json;

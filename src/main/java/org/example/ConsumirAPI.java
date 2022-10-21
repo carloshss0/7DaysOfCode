@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ConsumirAPI {
     public static void main(String[] args) throws IOException, InterruptedException {
-        String API_KEY = "k_cwv5ikij";
+        String API_KEY = ""; // add the api key to run the code.
 
 
         URI apiIMDB = URI.create("https://imdb-api.com/en/API/Top250TVs/" + API_KEY);
@@ -31,22 +31,4 @@ public class ConsumirAPI {
         movieList.forEach(System.out::println);
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
