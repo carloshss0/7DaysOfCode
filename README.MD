@@ -6,7 +6,7 @@ Ao final do desafio, terei um projeto completo no meu Github. O projeto consiste
 - [x] Dia 1: Consumir a API do IMDB, buscar os top 250 filmes da lista deles e imprimir o JSON correspondente no console. 
 
 
-- [ ] Dia 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos (como título, pôster, nota, etc).
+- [x] Dia 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos (como título, pôster, nota, etc).
 
 
 - [ ] Dia 3: Criar uma estrutura Movie com alguns atributo. Objetivo de que cada objeto desse tipo encapsule seus próprios dados.
