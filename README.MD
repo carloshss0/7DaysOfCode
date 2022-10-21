@@ -9,7 +9,7 @@ Ao final do desafio, terei um projeto completo no meu Github. O projeto consiste
 - [x] Dia 2: Parsear a resposta JSON obtida a partir do IMDB para extrair as suas informações e atributos (como título, pôster, nota, etc).
 
 
-- [ ] Dia 3: Criar uma estrutura Movie com alguns atributo. Objetivo de que cada objeto desse tipo encapsule seus próprios dados.
+- [x] Dia 3: Criar uma estrutura Movie com alguns atributo. Objetivo de que cada objeto desse tipo encapsule seus próprios dados.
 
 
 - [ ] Dia 4: Criar uma página HTML onde será possível ver as informações sobre o filme, incluindo pôster e a nota.
