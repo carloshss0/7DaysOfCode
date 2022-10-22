@@ -2,7 +2,10 @@ package org.example;
 
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -23,12 +26,20 @@ public class ConsumirAPI {
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         String json = response.body();
-
         Parse parse = new Parse(json);
 
         List<Movie> movieList = parse.generateMoviesList(json);
 
-        movieList.forEach(System.out::println);
+//        movieList.forEach(System.out::println);
+
+        try {
+            File file = new File("template.html");
+            HTMLGenerator generator = new HTMLGenerator(new PrintWriter(file));
+            generator.generateHTML(movieList);
+        } catch (FileNotFoundException e) {
+
+            e.printStackTrace();
+        }
 
     }
 }
