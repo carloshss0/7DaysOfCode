@@ -15,7 +15,7 @@ Ao final do desafio, terei um projeto completo no meu Github. O projeto consiste
 - [x] Dia 4: Criar uma página HTML onde será possível ver as informações sobre o filme, incluindo pôster e a nota.
 
 
-- [ ] Dia 5: Encapsular algumas chamadas desenvolvidas até então.
+- [x] Dia 5: Encapsular algumas chamadas desenvolvidas até então.
 
 
 - [ ] Dia 6: Deixar o código mais genérico. (Usar interface)

@@ -54,7 +54,7 @@ public class Parse {
         return parseJSONAttributes(moviesArray, 4);
     }
 
-    public List<Movie> generateMoviesList(String json) {
+    public List<Movie> generateMoviesList() {
 
         String[] moviesArray = parseJSONMovies(json);
 
