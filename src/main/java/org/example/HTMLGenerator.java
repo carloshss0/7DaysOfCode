@@ -13,7 +13,7 @@ public class HTMLGenerator {
         this.writer = writer;
     }
 
-    public void generateHTML(List<Movie> movies) throws IOException {
+    public void generateHTML(List<? extends Content> contents) throws IOException {
         String head =
                 """
                 <head>
@@ -46,9 +46,7 @@ public class HTMLGenerator {
                     </div>
                 """;
 
-        for (Movie movie: movies){
-            writer.write(String.format(divTemplate, movie.getTitle(), movie.getUrlImage(), movie.getTitle(), movie.getRating(), movie.getYear()));
-        }
+        contents.forEach(content -> writer.write(String.format(divTemplate, content.title(), content.urlImage(), content.title(), content.rating(), content.year())));
         String closedivClass =
                 """
                 </div>

@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class Movie {
+public class Movie implements Content{
 
     private String title;
     private String urlImage;
@@ -15,14 +15,25 @@ public class Movie {
         this.year = year;
     }
 
-    public String getTitle() { return title; }
+    @Override
+    public String title() {
+        return title;
+    }
 
-    public String getUrlImage() { return urlImage; }
+    @Override
+    public String urlImage() {
+        return urlImage;
+    }
 
-    public String getRating() { return rating; }
+    @Override
+    public String rating() {
+        return rating;
+    }
 
-    public String getYear() { return year; }
-
+    @Override
+    public String year() {
+        return year;
+    }
 
     @Override
     public String toString() {
@@ -32,5 +43,7 @@ public class Movie {
                 ", rating: " + rating + '\'' +
                 ", year: " + year + '\'';
     }
+
+
 }
 
