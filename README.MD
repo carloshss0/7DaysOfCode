@@ -21,4 +21,4 @@ Ao final do desafio, terei um projeto completo no meu Github. O projeto consiste
 - [x] Dia 6: Deixar o código mais genérico. (Usar interface)
 
 
-- [ ] Dia 7: Ordernar a lista com base em diferentes atributos.
+- [x] Dia 7: Ordernar a lista com base em diferentes atributos.

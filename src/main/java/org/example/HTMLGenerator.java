@@ -52,6 +52,6 @@ public class HTMLGenerator {
                 </div>
                 """;
         writer.write(closedivClass);
-        writer.close();
+
     }
 }

@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class Movie implements Content{
+public class Movie implements Content {
 
     private String title;
     private String urlImage;
@@ -35,6 +35,7 @@ public class Movie implements Content{
         return year;
     }
 
+
     @Override
     public String toString() {
         return
@@ -44,6 +45,9 @@ public class Movie implements Content{
                 ", year: " + year + '\'';
     }
 
-
+    @Override
+    public int compareTo(Content content) {
+        return this.rating().compareTo(content.rating());
+    }
 }
 
